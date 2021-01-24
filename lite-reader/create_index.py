@@ -1,6 +1,6 @@
 import os
 
-path = r"/mnt/c/Development Work/sohailmerchant.github.io/lite-reader/"
+path = r"/mnt/c/Development Work/sohailmerchant.github.io/lite-reader/output"
 
 def html_open_tag():
     html_opening_tag = """<html dir="rtl" lang="ar">
@@ -20,8 +20,8 @@ def html_open_tag():
                             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
                             
-                            <link rel="stylesheet" type="text/css" href="/css/style.css"  />
-                            <script type="text/javascript" src="/js/CollapsibleLists.js"></script>
+                            <link rel="stylesheet" type="text/css" href="css/style.css"  />
+                            <script type="text/javascript" src="js/CollapsibleLists.js"></script>
                         
                             
                         </head>
@@ -50,7 +50,7 @@ def create_index(path):
         for name in files:
             if name.endswith('html'):
                 #print(name)
-                path = "../lite-reader/"+name
+                path = "../lite-reader/output/"+name
                 index += """
                
                 <p><a href='{}'>{}</a></p>
