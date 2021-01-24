@@ -31,7 +31,7 @@ def html_open_tag():
                          <nav class="navbar navbar-light bg-light">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="http://www.kitab-project.org" target="_blank">
-                                <img src="../img/kitab-logo.png" width="60px"/></a>
+                                <img src="./img/kitab-logo.png" width="60px"/></a>
                                 
                                 <a class="nav-link" aria-current="page" href="https://sohailmerchant.github.io/lite-reader/index.html">Book Index</a>
                                
