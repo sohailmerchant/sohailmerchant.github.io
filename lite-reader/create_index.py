@@ -1,4 +1,4 @@
-import os
+import os, re
 
 path = r"/mnt/c/Development Work/sohailmerchant.github.io/lite-reader/output"
 
@@ -39,6 +39,7 @@ def html_open_tag():
                             </nav>
                         <div class='row p-30'>
         <div class='col-md-12'>
+         <div class="card-columns">
                             """
     
     return html_opening_tag
@@ -49,16 +50,29 @@ def create_index(path):
         for name in files:
             if name.endswith('html'):
                 #print(name)
+                
+            
+                book_title = re.sub(r"(\w)([A-Z])", r"\1 \2", name.split('.')[1])
+                author = re.sub(r"(\w)([A-Z])", r"\1 \2", name.split('.')[0])
+                date = author[4]
+
                 path = "../lite-reader/output/"+name
                 index += """
                
-                <p><a href='{}'>{}</a></p>
-                """.format(path,name)
+                <div class='card'>
+                <div class='card-body'>
+                 <h5 class="card-title"><a href='{path}'>{book_title}</a></h5>
+
+                <p class="card-text">{author} {date}</p>
+                
+                </div><div class="card-footer"><small class="text-muted"><a href='{path}'><i class="bi bi-book" title="Read"></i></a></small></div></div>
+                
+                """.format(path=path,book_title=book_title,author=author,date=date)
                 #print(index)
     return index
 
 def html_close():
-    html_closing_tag = """</div></div></div></body>"""
+    html_closing_tag = """</div></div></div></div></body>"""
     return html_closing_tag
 
 

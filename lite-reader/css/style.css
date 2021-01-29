@@ -209,6 +209,8 @@ cursor: pointer;
 .bi{
     cursor: pointer;
     color:#2863A5;
+    font-size: 20px;
+    padding:0px
 }
 .bi:hover{
     color: #CB2230;
@@ -237,3 +239,9 @@ cursor: pointer;
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
+
+.card-text{
+
+    font-size: 12px;
+}
+
