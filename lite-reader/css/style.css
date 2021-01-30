@@ -125,7 +125,7 @@ p{
 
     overflow:none;
     text-align: right;
-    direction:rtl;
+    direction:ltr;
 
 }
 
@@ -177,27 +177,63 @@ direction: ltr ;
 background-color: #fafafa;
 }
 
-.ui-btn.my-tooltip-btn,
-.ui-btn.my-tooltip-btn:hover,
-.ui-btn.my-tooltip-btn:active {
-    background: none;
-    border: 0;
+@media (min-width: 992px) {
+    #sidebar-left.collapsed {
+      /* same width as sidebar */
+      margin-left: -25%;
+    }
+    #sidebar-right.collapsed {
+      /* same width as sidebar */
+      margin-right: -25%;
+    }
+  
+    .navbar-collapse {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
 }
 
+  .sidebar {
+    /* for the animation */
+    transition: margin 0.3s ease;
+  }
+  
+  .collapsed {
+    /* hide it for small displays*/
+    display: none;
+  }
+  
+  @media (min-width: 992px) {
+    .collapsed {
+      display: block;
+    }
+  }
 .toggle-sidebar-left{
 cursor: pointer;
 }
-@media (min-width: 992px) {
-    .collapsed {
-        display: block;
+.toggle-sidebar-right{
+    cursor: pointer;
     }
-    #sidebar-left.collapsed {
-        margin-left: -25%; /* same width as sidebar */
-    }
-    #sidebar-right.collapsed {
-        margin-right: -25%; /* same width as sidebar */
-    }
-}
 
 .sidebar {
     -webkit-transition: margin 0.5s ease;
@@ -206,11 +242,16 @@ cursor: pointer;
     transition: margin 0.5s ease;
    
 }
+ 
+  #content {
+    /* for the animation */
+    transition: width 0.3s ease;
+  }
+
 .bi{
     cursor: pointer;
     color:#2863A5;
-    font-size: 20px;
-    padding:0px
+    padding: 6px;
 }
 .bi:hover{
     color: #CB2230;
@@ -219,9 +260,6 @@ cursor: pointer;
 .card-header{
 
     background-color: #f1f1f1;
-}
-.status{
-    color: #d3ded3;
 }
 
 .back-to-top {
@@ -237,22 +275,15 @@ cursor: pointer;
     color: #2863A5;
     text-align: left;
 }
-.bi-check-circle-fill{
-    color:green
-}
 
 .navbar{
     padding-top: 0rem;
     padding-bottom: 0rem;
 }
-
-.card-text{
-
-    font-size: 12px;
+.title-heading{
+  color:#2863A5;
 }
+.container-fluid{
 
-.markdown{
-    color: gray;
-    font-size: 12px;
-    margin-left:10px;
+  padding-right: var(--bs-gutter-x,1.75rem)!important;
 }

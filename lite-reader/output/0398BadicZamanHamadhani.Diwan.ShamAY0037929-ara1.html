@@ -2,6 +2,7 @@
                         <head>
 
                             <meta charset="utf-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
 
                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                             
@@ -17,6 +18,7 @@
                             
                             <link rel="stylesheet" type="text/css" href="../css/style.css"  />
                             <script type="text/javascript" src="../js/CollapsibleLists.js"></script>
+                            
                         
                             
                         </head>
@@ -38,8 +40,10 @@
                                 <div class="row top-heading-panel content-outer-spacing">
                                 <div class="col-md-12 h-100">
                                 <h4>
-                                    Diwan by Badic Zaman Hamadhani
+                                Diwan by Badic Zaman Hamadhani
+            
                                 </h4>
+                                
                                 </div>
                                 </div>
                             </div>
@@ -47,10 +51,10 @@
                             </div>
                             </div> 
                                 
-                        <div class="row " id="row-main">
+                        <div class='container-fluid'><div class="row " id="row-main">
                                     <div class='col-md-3 sidebar' id='sidebar-right'>
                                         <div class='right-panel shadow bg-white rounded sticky-top'>
-                                            <div class='card-header'>عنوان الفصل</div><ul class='collapsibleList'>
+                                            <div class='card-header title-heading'>عنوان الفصل</div><ul class='collapsibleList'>
  
     </li>
 </ul>
@@ -58,24 +62,32 @@
                                         </div>
                                     </div>
                         
-                                    <div class="col-md-6" id="content">
+                                    <div class="col-md-6 main" lang="ara" id="content ">
                                     <div class="card-header sticky-top">
                                     <div class="row">
                                     
-                                     <div class="col-md-3">
-                                        <i class="bi bi-arrows-angle-expand toggle-sidebar-left toggle-sidebar-right">
+                                     <div class="col-md-4 col-2">
+                                        <i class="bi bi-arrows-angle-expand toggle-sidebar-right toggle-sidebar-left ">
                                         </i>
                                         </div>
-                                        <div class="col-md-9" style='text-align:left'>
+                                        <div class="col-md-4 col-8 title-heading">
+                                        Diwan
+                                        </div>
+                                        <div class="col-md-4 col-2" style='text-align:left'>
+                                       
                                         <i id="back-to-top" class="bi bi-arrow-bar-up">
                                         </i>
+                                       
                                         </div>
+                                       
                                         
                                     
                                     </div>
                                     </div>
-                                        <div class='shadow p-3 mb-5 bg-white rounded'>
-                                        
+                                        <div class='shadow p-5 mb-5 bg-white rounded'>
+                                        <div class='row'>
+                                        <div class='col-md-12'>
+
                                             ﻿
             <p class='poetry'>
                 <span class='hemistich-1'>البحر : وافر تام ( سل الملك الكريم إلام تبني </span>
@@ -8988,24 +9000,31 @@
              <span id='ms45'></span></span>
             </p>
             
-
                                         </div>
+                                        
+                                     
+                                        </div></div>
                                 </div>
                                     
                         
                         
                         <div class='col-md-3 sidebar' id='sidebar-left'> 
                         <div class='left-panel shadow bg-white rounded sticky-top'>
-                        <div class='card-header'>
+                        <div class='card-header title-heading'>
                                         رؤى الكتاب
                                         </div>
                                         <div class="card-body">
     
 
-                                        <p>Quranic Reference: 0</p> <p>Milestones: 45 </p><p>Word Count: 13290</p>
+                                        <p class='text-muted'>Quranic Reference: 0</p> <p class='text-muted'>Milestones: 45 </p>
+                                        <div>
+                                <p class='text-muted'>Book Title: ديوان بديع الزمان الهمذاني :: ديوان بديع الزمان الهمذاني ¶ المؤلف: الهمذانى، ابوالفضل احمد بن الحسين بن يحيى بن سعيد 398 ه ¶ ملاحظة: [هذا الكتاب من كتب المستودع بموقع المكتبة الشاملة]</p>
+                                <p class='text-muted'>Author: أبو الفضل أحمد بن الحسين بن يحيى بديع الزمان الهمذاني :: الهمذانى، ابوالفضل احمد بن الحسين بن يحيى بن سعيد 398 ه :: بديع الزمان الهمذاني</p>
+                                <p class='text-muted'>Author Date: 0398</p>
+                        </div>
                                           </div>
                                         </div>
-                                        </div>
+                                        </div></div>
                         </div>
                                     <div class="row" id='footer'><div class="col-md-12">
                                         KITAB project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (Grant agreement No. ) 
@@ -9020,7 +9039,7 @@
                                         
                             $(document).ready(function () {
                               $(window).scroll(function () {
-                                if ($(this).scrollTop() > 50) {
+                                if ($(this).scrollTop() > 80) {
                                     $('#back-to-top').fadeIn();
                                 } else {
                                     $('#back-to-top').fadeOut();
@@ -9085,4 +9104,5 @@
                             });
 
                             </script>
+
                         </html>
