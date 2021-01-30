@@ -220,6 +220,9 @@ cursor: pointer;
 
     background-color: #f1f1f1;
 }
+.status{
+    color: #d3ded3;
+}
 
 .back-to-top {
     position: fixed;
@@ -244,4 +247,3 @@ cursor: pointer;
 
     font-size: 12px;
 }
-
