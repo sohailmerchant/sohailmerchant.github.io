@@ -252,6 +252,10 @@ cursor: pointer;
     cursor: pointer;
     color:#2863A5;
     padding: 6px;
+    font-size: 20px;
+}
+.markdown{
+  color: green;
 }
 .bi:hover{
     color: #CB2230;
@@ -282,6 +286,7 @@ cursor: pointer;
 }
 .title-heading{
   color:#2863A5;
+  text-align: center;
 }
 .container-fluid{
 
