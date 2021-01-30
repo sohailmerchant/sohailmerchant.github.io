@@ -71,7 +71,7 @@ def create_index(path):
 
                     <p class="card-text">{author} {date}</p>
                     
-                    </div><div class="card-footer"><small class="text-muted"><a href='{path}'><i class="bi bi-book-fill" title="Read"> </i></a></small></div></div>
+                    </div><div class="card-footer"><small class='markdown'>mARkdown</small><small class="text-muted"><a href='{path}'><i class="bi bi-book-fill" title="Read"> </i></a></small></div></div>
                     
                     """.format(path=path,book_title=book_title,author=author,date=date)
                 

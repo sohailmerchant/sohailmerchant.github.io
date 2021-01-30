@@ -247,3 +247,9 @@ cursor: pointer;
 
     font-size: 12px;
 }
+
+.markdown{
+    color: gray;
+    font-size: 12px;
+    margin-left:10px;
+}
