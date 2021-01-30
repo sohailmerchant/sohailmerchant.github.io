@@ -5,6 +5,7 @@ path = r"/mnt/c/Development Work/sohailmerchant.github.io/lite-reader/output"
 def html_open_tag():
     html_opening_tag = """<html dir="rtl" lang="ar">
                         <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
 
                             <meta charset="utf-8">
 
@@ -39,7 +40,7 @@ def html_open_tag():
                             </div>
                             </nav>
                         <div class='row p-30'>
-        <div class='col-md-12 context' id='container'>
+        <div class='col-12 col-sm-12 context' id='container'>
          <div class="card-columns">
 
         
@@ -68,10 +69,10 @@ def create_index(path):
                     <div class='card'>
                     <div class='card-body' >
                     <h5 class="card-title"><a href='{path}'>{book_title}</a></h5>
-
+                    
                     <p class="card-text">{author} {date}</p>
                     
-                    </div><div class="card-footer"><small class='markdown'>mARkdown</small><small class="text-muted"><a href='{path}'><i class="bi bi-book-fill" title="Read"> </i></a></small></div></div>
+                    </div><div class="card-footer"><small class='markdown'>mARkdown</small><small class="text-muted"><a href='{path}'><i class="bi bi-book" title="Read"> </i></a></small><i class="bi bi-check-circle-fill"></i></div></div>
                     
                     """.format(path=path,book_title=book_title,author=author,date=date)
                 
@@ -85,7 +86,7 @@ def create_index(path):
 
                     <p class="card-text">{author} {date}</p>
                     
-                    </div><div class="card-footer"><small class="text-muted"><a href='{path}'><i class="bi bi-book-half" title="Read"></i></a></small></div></div>
+                    </div><div class="card-footer"><small class="text-muted"><a href='{path}'><i class="bi bi-book" title="Read"></i></a></small></div></div>
                     
                     """.format(path=path,book_title=book_title,author=author,date=date)
                    

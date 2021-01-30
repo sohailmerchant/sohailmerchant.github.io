@@ -237,6 +237,9 @@ cursor: pointer;
     color: #2863A5;
     text-align: left;
 }
+.bi-check-circle-fill{
+    color:green
+}
 
 .navbar{
     padding-top: 0rem;
